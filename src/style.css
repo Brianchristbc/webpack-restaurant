@@ -41,15 +41,13 @@ body {
 }
 
 .hero-image {
-  width: 30vw;
-  height: 20vw;
-  object-fit: cover;
+  transform: scale(0.85);
 }
 
 #content {
   display: grid;
   grid-template-columns: 4fr 6fr;
-  padding: 3rem;
+  padding: 0 3rem 0 3rem;
   gap: 1rem;
   align-items: center;
 }
@@ -84,7 +82,6 @@ body {
 @media (max-width: 800px) {
   #content {
     grid-template-columns: 1fr;
-    padding: 1rem;
   }
 
   .hero-image {
