@@ -1,10 +1,13 @@
 import "./style.css";
+import { renderHomePage } from "./load.js";
 
-console.log("test log");
+window.addEventListener("load", () => {
+  renderHomePage();
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    alert(button.innerText);
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      alert(button.innerText);
+    });
   });
 });
